@@ -1,12 +1,12 @@
-/* Keyframes for the color animation */
-@keyframes rainbow {
-    0% { background-color: red; }
-    16% { background-color: orange; }
-    33% { background-color: yellow; }
-    50% { background-color: green; }
-    66% { background-color: blue; }
-    83% { background-color: indigo; }
-    100% { background-color: violet; }
+/* Keyframes for the text color animation */
+@keyframes rainbow-text {
+    0% { color: red; }
+    16% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    66% { color: blue; }
+    83% { color: indigo; }
+    100% { color: violet; }
   }
   
   /* Apply the rainbow animation to the background */
@@ -16,8 +16,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 300% 300%;
-    animation: rainbow 10s infinite alternate;
+    background-color: black; /* Set background to black */
+    color: white; /* Optional: Set default text color to white */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+
+  .rainbow-text {
+    display: inline-block;
+    animation: rainbow-text 5s linear infinite; /* Adjust timing as needed */
   }
   
