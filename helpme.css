@@ -1,0 +1,23 @@
+/* Keyframes for the color animation */
+@keyframes rainbow {
+    0% { background-color: red; }
+    16% { background-color: orange; }
+    33% { background-color: yellow; }
+    50% { background-color: green; }
+    66% { background-color: blue; }
+    83% { background-color: indigo; }
+    100% { background-color: violet; }
+  }
+  
+  /* Apply the rainbow animation to the background */
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300% 300%;
+    animation: rainbow 10s infinite alternate;
+  }
+  
