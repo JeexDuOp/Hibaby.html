@@ -1,12 +1,14 @@
 // Function to wrap each word in a span with a class for rainbow animation
 function applyRainbowText() {
-    const elements = document.querySelectorAll('h1'); // Select the element(s) you want to apply the effect to
+    const headers = document.querySelectorAll('h1, h2, h3, h4, h5, h6'); // Select all header elements
 
-    elements.forEach(element => {
-        const words = element.textContent.split(' ');
-        element.innerHTML = words.map(word => `<span class="rainbow-text">${word}</span>`).join(' ');
+    headers.forEach(header => {
+        const words = header.textContent.split(' ');
+        header.innerHTML = words.map(word => `<span class="rainbow-text">${word}</span>`).join(' ');
     });
 }
 
 // Call the function to apply the effect when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', applyRainbowText);
+
+
