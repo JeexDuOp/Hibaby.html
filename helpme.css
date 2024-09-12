@@ -1,4 +1,3 @@
-/* Keyframes for the text color animation */
 @keyframes rainbow-text {
     0% { color: red; }
     16% { color: orange; }
@@ -9,25 +8,29 @@
     100% { color: violet; }
 }
 
-/* Apply the rainbow animation to the background */
+
 body {
     margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black; /* Set background to black */
-    color: white; /* Optional: Set default text color to white */
+    background-color: black;
+    color: white; 
     font-family: Arial, sans-serif;
 }
 
-/* Apply specific styles to headers */
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6{
     font-size: 3rem;
 }
 
-/* Rainbow text animation */
+p {
+
+font-size: medium;
+}
+
 .rainbow-text {
     display: inline-block;
-    animation: rainbow-text 0.5s linear infinite; /* Adjust the duration as needed */
+    animation: rainbow-text 0.5s linear infinite; 
 }
